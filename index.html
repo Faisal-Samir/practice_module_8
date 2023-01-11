@@ -21,23 +21,27 @@
         .foods img{
             width: 70%;
         }
-        .tiger{
-            margin: 30px 15px;
-        }
         .tiger img{
             width: 100%;
             border-radius: 10px;
         }
         .pair{
             display: flex;
-            width: 100%;
-            border: 6px solid green;
-            margin: 30px 15px;
         }
-        .pair img{
+        .pair .pair-item{
             width: 50%;
         }
-        .
+        .pair-item img{
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+        .body{
+            max-width: 900px;
+            margin: 0 auto;
+            border: 2px solid green;
+            
+        }
         @media screen and (max-width: 576px) {
             .food-section{
                 grid-template-columns: repeat(1,1fr);
@@ -148,14 +152,24 @@
             <button>Buy now</button>
         </div>
     </div>
-    <section class="two-pairs">
-        <div class="tiger">
-            <img src="images/tiger.webp" alt="">
-        </div>
-        <div class="pair">
-            <img src="images/food1.jpg" alt="">
-            <img src="images/tiger.webp" alt="">
-        </div>
-    </section>
+    <div class="body">
+        <section class="two-pairs">
+            <div class="tiger">
+                <img src="images/tiger.webp" alt="">
+            </div>
+            <div class="pair">
+                <div class="pair-item">
+                    <img src="images/food1.jpg" alt="">
+                </div>
+                <div class="pair-item">
+                    <img src="images/tiger.webp" alt="">
+                </div>
+                <div class="pair-item">
+                    <img src="images/food1.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </div>
+    
 </body>
 </html>
