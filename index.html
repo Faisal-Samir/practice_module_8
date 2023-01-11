@@ -16,7 +16,8 @@
             border: 2px solid green;
             padding: 20px;
             text-align: justify; 
-            border-radius: 8px      
+            border-radius: 8px; 
+            background-color:  lemonchiffon;    
         }
         .foods img{
             width: 70%;
@@ -38,9 +39,7 @@
         }
         .body{
             max-width: 900px;
-            margin: 0 auto;
-            border: 2px solid green;
-            
+            margin: 0 auto;        
         }
         @media screen and (max-width: 576px) {
             .food-section{
@@ -60,6 +59,14 @@
         @media screen and (min-width: 993px) and (max-width: 1400px) {
             .food-section{
                 grid-template-columns: repeat(4,1fr);
+            }
+        }
+        @media screen and (max-width: 576px) {
+            .pair{
+                flex-direction: column;
+            }
+            .pair .pair-item{
+                width: 100%;
             }
         }
     </style>
